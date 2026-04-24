@@ -94,7 +94,7 @@ def analyze_metadata(file_path: str) -> dict:
         return {}
 
 if __name__ == "__main__":
-    # Başına 'r' koyarak yolu temizliyoruz
-    test_image_path = r"C:\Users\demir\Desktop\HybridID\test_images\Test.jpg"
+    test_image_path = os.path.join("test_images", "Test.jpg")
+
     print("--- Analiz Başlatılıyor ---")
     analyze_metadata(test_image_path)
